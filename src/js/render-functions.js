@@ -5,6 +5,8 @@ const gallery = document.querySelector('.gallery');
 
 const loader = document.querySelector('.loader-container');
 
+const loadMoreBtn = document.querySelector('.load-more-btn');
+
 const lightbox = new SimpleLightbox('.gallery a');
 export function clearGallery() {
     gallery.innerHTML = '';
@@ -61,4 +63,11 @@ export function createGallery(images) {
   lightbox.refresh();
 }
 
+export function showLoadMoreButton() {
+  loadMoreBtn.classList.remove('is-hidden');
+}
+
+export function hideLoadMoreButton() {
+  loadMoreBtn.classList.add('is-hidden');
+}
 

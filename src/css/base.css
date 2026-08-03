@@ -71,12 +71,10 @@ body {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 360px));
-  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
   gap: 24px;
-  margin: 0;
-  padding: 0;
   list-style: none;
+  padding: 0;
 }
 
 .gallery-item {
@@ -135,6 +133,11 @@ body {
   font-size: 16px;
 }
 
+
+.load-more-btn {
+  display: block;
+  margin: 32px auto;
+}
 .is-hidden {
   display: none;
 }
